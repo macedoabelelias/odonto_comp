@@ -82,7 +82,7 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 .marca{
 	position:fixed;
 	left:50;
-	top:130;
+	top:200;
 	width:80%;
 	opacity:10%;
 }
@@ -98,7 +98,7 @@ if($marca_dagua == 'Sim'){ ?>
 		<table style="width: 100%; border: 0px solid #ccc;">
 			<tr>
 				<td style="border: 1px; solid #000; width: 20%; text-align: left;">
-					<img style="margin-top: 5px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="140px">
+					<img style="margin-top: 2px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="75px">
 				</td>
 				<td style="width: 20%; text-align: left; font-size: 13px;">
 				
@@ -107,7 +107,7 @@ if($marca_dagua == 'Sim'){ ?>
 				
 				</td>
 				<td style="width: 55%; text-align: right; font-size: 9px;padding-right: 10px;">
-						<b><big>ATESTADO MÉDICO</big></b><br>
+						<b><big>ATESTADO ODONTOLÓGICO</big></b><br>
 						<br>
 						 <?php echo mb_strtoupper($data_hoje) ?>
 				</td>
@@ -117,7 +117,7 @@ if($marca_dagua == 'Sim'){ ?>
 <br>
 		
 		
-		<div align="center" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:17px"><b>ATESTADO MÉDICO</b></div>
+		<div align="center" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:17px"><b>ATESTADO ODONTOLÓGICO</b></div>
 </div>
 <div id="footer" class="row">
 <hr style="margin-bottom: 0;">
@@ -130,12 +130,19 @@ if($marca_dagua == 'Sim'){ ?>
 </div>
 <div id="content" style="margin-top: 70px;">
 <div style="font-size: 15px;">
-	Atesto para os devidos fins que o Sr(a) <b><?php echo $nome_paciente ?></b> portador do CPF <?php echo $cpf_paciente ?> esteve sob cuidados médicos no dia <?php echo $data_hoje ?> e deverá se afastar de suas atividades pelo período de <?php echo $datas ?> <b>(<?php echo $dias ?> Dias) </b> por motivo de <?php echo $motivo ?>
+	<p style="margin-left:40px">Atesto para fins trabalhistas que o Sr(a) <b><?php echo $nome_paciente ?>
+</b> portador do CPF nº: <?php echo $cpf_paciente ?> <p>esteve sob cuidados profissionais no dia __/__/____,  
+	e deverá se afastar de suas atividades pelo período de <p><b><?php echo $dias ?>
+	 dias </b> por motivo de <?php echo $motivo ?>.</p>
+	<p style="margin-left:40px">Este atestado é válido para fins legais.</p>
+	<p style="margin-left:40px">Atesto ainda que o paciente encontrar-se-á em condições de retornar às 
+		suas atividades normais a partir <p>do dia __/__/____.</p>
+	
 </div>
 <?php if($obs != ""){ ?>
-<div style="margin-top: 20px; border:1px solid #000; font-size: 14px; padding:5px">
-	<b>Informações Relevantes</b>
-	<p style="font-size: 13px"><?php echo $obs ?></p>
+<div style="margin-top: 80px; border:1px solid #000; font-size: 14px; padding:5px">
+	<b>Informações Relevantes / CID</b>
+	<p style="font-size: 13px" ><?php echo $obs ?></p>
 </div>
 <?php } ?>
  <div style="margin-top: 150px; font-size:13px" align="center">
